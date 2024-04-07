@@ -1,0 +1,34 @@
+POST http://localhost:3000/events
+Content-Type: application/json
+
+{
+    "title": "teste evento 2",
+    "details": "Um evento para quem é apaixonado por pragramacao",
+    "maximumAttendees": 2
+}
+
+###
+
+POST http://localhost:3000/events/d90d7bdd-ea31-4e33-b393-c85e413559af/attendees
+Content-Type: application/json
+
+{
+    "name": "Allan Varges",
+    "email": "allavargens@gmail.com"
+}
+
+###
+
+GET http://localhost:3000/events/a99f4251-30b3-49fb-a7e4-11aa9a2e5718
+Content-Type: application/json
+
+###
+
+GET http://localhost:3000/attendee/1/badge
+
+###
+
+GET http://localhost:3000/events/a99f4251-30b3-49fb-a7e4-11aa9a2e5718/attendees
+
+
+
